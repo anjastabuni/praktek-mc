@@ -26,34 +26,46 @@ class ActivityModul8 : AppCompatActivity() {
         binding = ActivityModul8Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val imageList: List<Image> = listOf(
-            Image(
+        val imageList: List<DataModel> = listOf(
+            DataModel(
                 R.drawable.noken,
                 "Noken samping",
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             ),
-            Image(
+            DataModel(
                 R.drawable.noken1,
                 "Noken samping",
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             ),
-            Image(
-                R.drawable.kalong,
-                "Kalung Yoa",
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-            ),
-            Image(
+            DataModel(
                 R.drawable.gelang1,
                 "Gelang Tangan",
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            ),
+            DataModel(
+                R.drawable.noken,
+                "Noken samping",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            ),
+            DataModel(
+                R.drawable.kalong,
+                "Kalung",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            ),
+            DataModel(
+                R.drawable.noken2,
+                "Noken samping",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             )
+
+
         )
 
         val  recyclerView = findViewById<RecyclerView>(R.id.imageGridLayout)
         gridLayoutManager = GridLayoutManager(applicationContext, 3, LinearLayoutManager.VERTICAL, false)
         recyclerView?.layoutManager = gridLayoutManager
         recyclerView?.setHasFixedSize(true)
-        recyclerView.adapter =ImageAdapter(this, imageList){
+        recyclerView.adapter =GridAdapter(this, imageList){
             val intent = Intent(this, ActivityDetailGrid::class.java)
             intent.putExtra(INTENT_PARCELABLE, it)
             startActivity(intent)
