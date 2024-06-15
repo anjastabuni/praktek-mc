@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_marginTop="20dp"
+    tools:context=".ActivityModul5">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="input text"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="36dp"
+        tools:ignore="Autofill,HardcodedText,LabelFor,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="SHARE TO"
+        android:textColor="#212121"
+        android:textSize="18dp"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck,VisualLintButtonSize"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <EditText
+        android:id="@+id/editPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="input phone number"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,VisualLintTextFieldSize"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Call"
+        android:textColor="#212121"
+        android:textSize="18dp"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck,VisualLintButtonSize"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="input location"
+        tools:ignore="Autofill,HardcodedText,LabelFor,VisualLintTextFieldSize"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="282dp" />
+
+    <Button
+        android:id="@+id/btnOpenGoogleMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Open Google Map"
+        android:textColor="#212121"
+        android:textSize="18dp"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck,VisualLintButtonSize"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <EditText
+        android:id="@+id/editWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="Input Website URL"
+        tools:ignore="Autofill,HardcodedText,LabelFor,VisualLintTextFieldSize"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="375dp" />
+
+    <Button
+        android:id="@+id/btnOpenWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Open Website"
+        android:textColor="#212121"
+        android:textSize="18dp"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck,VisualLintButtonSize"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="433dp" />
+
+    <Button
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:text="Open Camera"
+        android:textColor="#212121"
+        android:textSize="18dp"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck,VisualLintButtonSize"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="507dp" />
+
+    <Button
+        android:id="@+id/btnOpenGalery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:text="Open Galeri"
+        android:textColor="#212121"
+        android:textSize="18dp"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck,VisualLintButtonSize"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="577dp" />
+
+    <Button
+        android:id="@+id/btnOpenAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:text="Open Alarm"
+        android:textColor="#212121"
+        android:textSize="18dp"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck,VisualLintButtonSize"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="650dp" />
+</LinearLayout>
